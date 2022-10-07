@@ -63,9 +63,9 @@ def create_app():
     with app.app_context():
         db.init_app(app)
         db.create_all()
-        offer = load_offer('/home/alex/PycharmProjects/10.2 Git/Github/SQLAlchemy_HW/data/offers.json')
-        user = load_user('/home/alex/PycharmProjects/10.2 Git/Github/SQLAlchemy_HW/data/users.json')
-        orders = load_order('/home/alex/PycharmProjects/10.2 Git/Github/SQLAlchemy_HW/data/orders.json')
+        offer = load_offer('../data/offers.json')
+        user = load_user('../data/users.json')
+        orders = load_order('../data/orders.json')
 
     return app
 

@@ -28,6 +28,7 @@ def work_users():
                 **data
             )
         )
+        db.session.commit()
 
         return app.response_class(
             json.dumps("Ok"),
@@ -104,6 +105,7 @@ def work_orders():
                 **data
             )
         )
+        db.session.commit()
 
         return app.response_class(
             json.dumps("Ok"),
@@ -180,6 +182,7 @@ def work_offers():
                 **data
             )
         )
+        db.session.commit()
 
         return app.response_class(
             json.dumps("Ok"),
